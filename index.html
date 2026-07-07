@@ -789,9 +789,7 @@ a.big:hover{color:var(--aqua)}
           <h3>Call or text</h3>
           <a href="tel:+12057655096" class="big">(205) 765-5096</a>
           <h3>Email</h3>
-          <a href="mailto:cmwebber51492@gmail.com" class="big">cmwebber51492@gmail.com</a>
-          <h3>Online</h3>
-          <a href="https://www.apexbusinessconsultancy.com" target="_blank" rel="noopener" class="big">apexbusinessconsultancy.com</a>
+          <a href="mailto:cwebber@apexbusinessconsultancy.com" class="big">cwebber@apexbusinessconsultancy.com</a>
           <h3>Based in</h3>
           <span class="big" style="cursor:default">Northport, Alabama</span>
           <div class="info-card">
@@ -888,8 +886,7 @@ a.big:hover{color:var(--aqua)}
       <div class="foot-col">
         <h5>Get in touch</h5>
         <a href="tel:+12057655096">(205) 765-5096</a>
-        <a href="mailto:cmwebber51492@gmail.com">cmwebber51492@gmail.com</a>
-        <a href="https://www.apexbusinessconsultancy.com" target="_blank" rel="noopener">apexbusinessconsultancy.com</a>
+        <a href="mailto:cwebber@apexbusinessconsultancy.com">cwebber@apexbusinessconsultancy.com</a>
         <a style="cursor:default">Northport, AL</a>
       </div>
     </div>
@@ -982,7 +979,7 @@ a.big:hover{color:var(--aqua)}
 
   document.querySelectorAll("#chips .chip").forEach(function(chip){ chip.addEventListener("click", function(){ chip.classList.toggle("sel"); }); });
 
-  var FORM_ENDPOINT = "https://formsubmit.co/ajax/cmwebber51492@gmail.com";
+  var FORM_ENDPOINT = "https://formsubmit.co/ajax/cwebber@apexbusinessconsultancy.com";
   var form = document.getElementById("inquiryForm");
   if(form){
     form.addEventListener("submit", async function(e){
@@ -1013,7 +1010,7 @@ a.big:hover{color:var(--aqua)}
         if(res.ok){ showSuccess(); } else { throw new Error("bad status"); }
       } catch(err){
         var body = encodeURIComponent("Name: "+payload.name+"\nEmail: "+payload.email+"\nPhone: "+payload.phone+"\nBusiness: "+payload.company+"\nWebsite: "+payload.website+"\nServices: "+payload.services+"\n\n"+payload.message);
-        window.location.href = "mailto:cmwebber51492@gmail.com?subject="+encodeURIComponent(payload._subject)+"&body="+body;
+        window.location.href = "mailto:cwebber@apexbusinessconsultancy.com?subject="+encodeURIComponent(payload._subject)+"&body="+body;
         showSuccess();
       }
     });
