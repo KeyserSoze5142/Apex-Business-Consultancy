@@ -58,7 +58,7 @@
 
   // Web3Forms endpoint. Get your free access key at https://web3forms.com
   // (enter cwebber@apexbusinessconsultancy.com) and paste it below in place of
-  // YOUR_ACCESS_KEY_HERE.
+  // b802e001-4684-469d-8e69-f145a3219c9b
   var FORM_ENDPOINT = "https://api.web3forms.com/submit";
   var WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE";
   var form = document.getElementById("inquiryForm");
