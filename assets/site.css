@@ -284,3 +284,13 @@ a.big:hover{color:var(--aqua)}
   .hero h1 .line span{transform:none}.reveal{opacity:1;transform:none}
 }
 :focus-visible{outline:2px solid var(--aqua);outline-offset:3px;border-radius:4px}
+
+/* ---- bento cells with full-bleed service images ---- */
+.cell.has-img{justify-content:flex-end;min-height:280px}
+.cell.feat.has-img{min-height:360px}
+.cell.has-img .cell-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transition:transform .6s var(--ease)}
+.cell.has-img:hover .cell-bg{transform:scale(1.045)}
+.cell.has-img .cell-shade{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(8,9,14,.12) 0%,rgba(8,9,14,.45) 46%,rgba(8,9,14,.92) 100%)}
+.cell.has-img > *:not(.cell-bg):not(.cell-shade){position:relative;z-index:2}
+.cell.has-img p{color:#CBD2DE}
+@media (max-width:700px){.cell.has-img{min-height:240px}.cell.feat.has-img{min-height:300px}}
